@@ -1,0 +1,14 @@
+<h1>Bestiario</h1>
+
+<p>
+  Has explorado {{ zonasExploradas }} zonas.
+  Enemigos descubiertos:
+</p>
+
+<ul>
+  @for (enemigo of enemigos(); track enemigo.nombre) {
+    <li>
+      {{ enemigo.nombre }} es un/a {{ enemigo.tipo }}
+    </li>
+  }
+</ul>

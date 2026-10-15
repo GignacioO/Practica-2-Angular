@@ -1,0 +1,9 @@
+<h1>Misiones</h1>
+
+<ul>
+  @for (tarea of tareas(); track tarea.titulo) {
+    <li>
+      {{ tarea.titulo }}: dificultad {{ tarea.dificultad }}
+    </li>
+  }
+</ul>
